@@ -1,0 +1,11 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/Users/no17436/dev/netguru'
+let g:netrw_dirhist_2='/Users/no17436/dev/aladdin'
+let g:netrw_dirhist_3='/Users/no17436/dev/aladdin/config'
+let g:netrw_dirhist_4='/Users/no17436/dev/aladdin/config/locales'
+let g:netrw_dirhist_5='/Users/no17436/dev/aladdin/config'
+let g:netrw_dirhist_6='/Users/no17436/dev/aladdin/config/initializers'
+let g:netrw_dirhist_7='/Users/no17436/dev/aladdin/config'
+let g:netrw_dirhist_8='/Users/no17436/dev/exercism/ruby/hamming'
+let g:netrw_dirhist_9='/Users/no17436/dev/airpress'
