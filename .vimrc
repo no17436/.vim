@@ -33,12 +33,15 @@ filetype indent on        "indent depends on filetype
 filetype plugin indent on "indent based on pathogen?
 set tabstop=2             "set tab character to 2 characters
 set shiftwidth=2          "set indent width for autoindent
+set sw=2 sts=2 et         " Use 2 spaces everywhere
 set expandtab             "turn tabs into whitespace
 set smartindent           "Turn on smart indent
 set wrap!                 "Turn off word wrapping
+set eol                   " Ensure newline at EOF on save
 set textwidth=79
 set formatoptions=qrn1
-set colorcolumn=85
+set colorcolumn=80
+au BufRead,BufWrite * if ! &bin | silent! %s/\s\+$//ge | endif " Removes trailing spaces on save
 
 "
 " incremental search
@@ -183,7 +186,7 @@ vnoremap <leader>y "+y
 nnoremap <leader>. :call ReloadAllSnippets()<cr>:so $MYVIMRC<cr>
 
 " przechodzenie między wynikami w Ack
-nnoremap <C-n> :cn<cr> 
+nnoremap <C-n> :cn<cr>
 
 " pomoc w Dash.app
 inoremap <F1> <ESC>:Dash<cr>
