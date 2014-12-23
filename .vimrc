@@ -62,8 +62,15 @@ set foldnestmax=10      "deepest fold is 10 levels
 set nofoldenable        "dont fold by default
 " set foldlevel=1         "this is just what i use
 
-" map space to toggle fold
+" RSpec.vim mappings and settings
+map <Leader>f :call RunCurrentSpecFile()<CR>
+map <Leader>r :call RunNearestSpec()<CR>
+map <Leader>l :call RunLastSpec()<CR>
+" map <Leader>a :call RunAllSpecs()<CR>
+let g:rspec_runner = "os_x_iterm"
 
+
+" map space to toggle fold
 nnoremap <Space> za
 " map space to open recursively fold
 nnoremap <S-Space> zO
@@ -169,7 +176,6 @@ nnoremap <C-i> cc# TODO: to be implemented<ESC>
 nnoremap <C-l> Alogger.info "------------------- #{}"<Left><Left>
 nnoremap ; :wa<cr>
 nnoremap <C-c> I#<Space><ESC>
-nnoremap <leader>r :!ruby %<cr>
 nnoremap <leader>y "+y
 vnoremap <leader>y "+y
 

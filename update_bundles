@@ -36,6 +36,7 @@ git_bundles = [
   "git://github.com/vim-ruby/vim-ruby.git",
   "https://github.com/lucapette/vim-ruby-doc.git",
   "https://github.com/kchmck/vim-coffee-script.git",
+  "https://github.com/thoughtbot/vim-rspec.git",
   "https://github.com/rizzatti/dash.vim.git", #plugin do Dash.app
   "git://github.com/nathanaelkane/vim-indent-guides.git"
   # "git://github.com/tsaleh/vim-shoulda.git",
