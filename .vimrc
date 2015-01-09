@@ -118,7 +118,7 @@ let g:snipMate.scope_aliases['haml'] = 'ruby,rails,no17436,haml'
 " colorscheme molokai
 " set background=dark
 
-colorscheme Tomorrow
+colorscheme Tomorrow-Night-Eighties
 
 set cursorline " set line highlight
 
