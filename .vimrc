@@ -227,10 +227,3 @@ nnoremap <C-w>r :call WrapLinesAtWord()<cr>
 
 " expand current path (credits: destroy all software) das-0013-file-navigation-in-vim
 cnoremap %% <C-R>=expand('%:h').'/'<CR>
-
-
-" autoreload .vimrc file
-""augroup myvimrc
-""  au!
-""  au BufWritePost .vimrc,_vimrc,vimrc,.gvimrc,_gvimrc,gvimrc so $MYVIMRC | if has('gui_running') | so $MYGVIMRC | endif
-""augroup END
