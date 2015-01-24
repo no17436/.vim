@@ -40,8 +40,11 @@ set wrap!                 "Turn off word wrapping
 set eol                   " Ensure newline at EOF on save
 set textwidth=79
 set formatoptions=qrn1
-set colorcolumn=80
 au BufRead,BufWrite * if ! &bin | silent! %s/\s\+$//ge | endif " Removes trailing spaces on save
+
+" mark 100th and 120th characters
+highlight ColorColumn ctermbg=235 guibg=#2c2d27
+let &colorcolumn="100,".join(range(120,999),",")
 
 "
 " incremental search
