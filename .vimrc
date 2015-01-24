@@ -225,6 +225,10 @@ endfunc
 nnoremap <C-w>r :call WrapLinesAtWord()<cr>
 
 
+" expand current path (credits: destroy all software) das-0013-file-navigation-in-vim
+cnoremap %% <C-R>=expand('%:h').'/'<CR>
+
+
 " autoreload .vimrc file
 ""augroup myvimrc
 ""  au!
