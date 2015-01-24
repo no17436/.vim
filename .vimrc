@@ -10,7 +10,7 @@ call pathogen#infect()
 set nocompatible  "to get rid of unnecessary vi compatibility
 set bs=2          "set backspace to be able to delete previous characters
 set number        "enable line numbering, taking up 6 spaces
-set rnu           "relative line numbering
+set rnu           "relative line numbering (so useful when using for ex. 25j)
 let mapleader="," "set leader to ,
 set modelines=0   "for security (http://lists.alioth.debian.org/pipermail/pkg-vim-maintainers/2007-June/004020.html)
 syntax on
@@ -39,11 +39,13 @@ set wrap!                 "Turn off word wrapping
 set eol                   " Ensure newline at EOF on save
 set textwidth=79
 set formatoptions=qrn1
-au BufRead,BufWrite * if ! &bin | silent! %s/\s\+$//ge | endif " Removes trailing spaces on save
 
 " mark 100th and 120th characters
 highlight ColorColumn ctermbg=235 guibg=#2c2d27
 let &colorcolumn="100,".join(range(120,999),",")
+
+" Removes trailing spaces on save
+au BufRead,BufWrite * if ! &bin | silent! %s/\s\+$//ge | endif
 
 "
 " incremental search
@@ -115,7 +117,6 @@ let g:syntastic_ruby_checkers = ['rubocop']
 
 
 " solarized color scheme (http://ethanschoonover.com/solarized)
-"
 "set t_Co=16
 "let g:solarized_termcolors=16
 "let g:solarized_termtrans=1
@@ -188,21 +189,23 @@ nnoremap <leader>s <C-w>v<C-w>l
 "close vertical split
 nnoremap <leader>c <C-w>c
 
-"ruby (ruby on rails) bindings
+" insert ruby hash operator
 inoremap <C-l> <Space>=><Space>
-nnoremap ; :wa<cr>
-nnoremap <C-c> I#<Space><ESC>
-nnoremap <leader>y "+y
-vnoremap <leader>y "+y
 
-" przeładowywanie snippetów i .vimrc
+" save all buffers
+nnoremap ; :wa<cr>
+
+" nnoremap <leader>y "+y
+" vnoremap <leader>y "+y
+
+" use ,. to reload snippets and .vimrc (so usefull when changing configs when working on a project)
 nnoremap <leader>. :call ReloadAllSnippets()<cr>:so $MYVIMRC<cr>
 
 " next (ctrl + n) / previous (ctrl + shift + n) Ack result
 nnoremap <C-S-n> :cp<cr>
 nnoremap <C-n> :cn<cr>
 
-" pomoc w Dash.app
+" open word in Dash.app
 inoremap <F1> <ESC>:Dash<cr>
 nnoremap <F1> :Dash<cr>
 vnoremap <F1> :Dash<cr>
