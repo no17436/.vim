@@ -24,7 +24,6 @@ set vb t_vb=      "no irritating visual bell
 set mouse=a "use mouse even in cli
 set ttyfast "fast terminal (improves responsiveness)
 set laststatus=2 "always show full status (with powerline, etc.)
-set noballooneval "don't display tooltips
 
 "
 " indenting
