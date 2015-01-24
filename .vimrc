@@ -177,9 +177,6 @@ nnoremap <leader>c <C-w>c
 
 "ruby (ruby on rails) bindings
 inoremap <C-l> <Space>=><Space>
-nnoremap <C-i> cc# TODO: to be implemented<ESC>
-" nnoremap <C-t> :tabedit %<CR>
-nnoremap <C-l> Alogger.info "------------------- #{}"<Left><Left>
 nnoremap ; :wa<cr>
 nnoremap <C-c> I#<Space><ESC>
 nnoremap <leader>y "+y
