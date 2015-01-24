@@ -1,9 +1,12 @@
 #!/usr/bin/env ruby
 
-git_bundles = [ 
+# WARNING: running this script will override you bundle folder.
+# It will ERASE ALL YOUR SNIPPETS if not backed up.
+
+git_bundles = [
   # "git://github.com/ervandew/supertab.git",
   # "https://github.com/Lokaltog/powerline.git",
-  # "https://github.com/bling/vim-airline.git",
+  'https://github.com/bling/vim-airline.git',
   "git://github.com/vim-scripts/AutoClose.git",
   "https://github.com/chriskempson/vim-tomorrow-theme.git",
   # "https://github.com/wincent/Command-T.git",
@@ -32,13 +35,17 @@ git_bundles = [
   # "https://github.com/tomasr/molokai.git",
   "git://github.com/tsaleh/vim-matchit.git",
   # "git://github.com/tpope/vim-commentary.git",
-  "https://github.com/tomtom/tcomment_vim.git",
+  "https://github.com/tomtom/tcomment_vim.git", # commenting with ctrl+shift+-
   "git://github.com/vim-ruby/vim-ruby.git",
   "https://github.com/lucapette/vim-ruby-doc.git",
   "https://github.com/kchmck/vim-coffee-script.git",
   "https://github.com/thoughtbot/vim-rspec.git",
-  "git://github.com/tpope/vim-vinegar.git", # przegladanie katalogu
-  "https://github.com/rizzatti/dash.vim.git", #plugin do Dash.app
+  "git://github.com/tpope/vim-vinegar.git", # browse current file folder
+  "https://github.com/rizzatti/dash.vim.git", # open in Dash.app
+  "https://github.com/MattesGroeger/vim-bookmarks.git", # bookmarks
+  "https://github.com/scrooloose/syntastic.git", # syntax highlighting for rubocop (and more)
+  'git://github.com/tpope/vim-dispatch.git', # async by tpope!!!
+  'https://github.com/AndrewRadev/splitjoin.vim.git', # convert block inline/multiline and more!
   "git://github.com/nathanaelkane/vim-indent-guides.git"
   # "git://github.com/tsaleh/vim-shoulda.git",
   # "git://github.com/tsaleh/vim-tmux.git",
