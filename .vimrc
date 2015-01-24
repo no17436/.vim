@@ -198,7 +198,8 @@ vnoremap <leader>y "+y
 " przeładowywanie snippetów i .vimrc
 nnoremap <leader>. :call ReloadAllSnippets()<cr>:so $MYVIMRC<cr>
 
-" przechodzenie między wynikami w Ack
+" next (ctrl + n) / previous (ctrl + shift + n) Ack result
+nnoremap <C-S-n> :cp<cr>
 nnoremap <C-n> :cn<cr>
 
 " pomoc w Dash.app
@@ -212,7 +213,16 @@ nnoremap <F8> :Dispatch bundle exec rspec %<CR>
 inoremap <F9> :Copen<CR>
 nnoremap <F9> :Copen<CR>
 
+" quick access for opening files (from sourcetree or github path)
+nnoremap <leader>e :e<space>
+
 nmap <leader>x <Plug>ToggleAutoCloseMappings
+
+" use ,a {phrase} to Ack-grep project for a phrase
+nnoremap <leader>a :Ack<space>
+
+" open current buffer in new tab (useful for getting out of splits)
+nnoremap <leader>t :tabedit %<CR>
 
 
 "
