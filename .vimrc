@@ -212,6 +212,8 @@ nnoremap <F8> :Dispatch bundle exec rspec %<CR>
 inoremap <F9> :Copen<CR>
 nnoremap <F9> :Copen<CR>
 
+nmap <leader>x <Plug>ToggleAutoCloseMappings
+
 
 "
 " Ruby & Rails specific
