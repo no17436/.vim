@@ -206,6 +206,12 @@ inoremap <F1> <ESC>:Dash<cr>
 nnoremap <F1> :Dash<cr>
 vnoremap <F1> :Dash<cr>
 
+" running test through tpope's Dispatch plugin
+inoremap <F8> :Dispatch bundle exec rspec %<CR>
+nnoremap <F8> :Dispatch bundle exec rspec %<CR>
+inoremap <F9> :Copen<CR>
+nnoremap <F9> :Copen<CR>
+
 
 "
 " Ruby & Rails specific
