@@ -231,6 +231,9 @@ nnoremap <leader>a :Ack<space>
 " open current buffer in new tab (useful for getting out of splits)
 nnoremap <leader>t :tabedit %<CR>
 
+" change hash to Ruby 1.9+ form (from :aaa => :bbb to aaa: :bbb)
+nnoremap <leader>h :.,$s/:\([^ ]*\)\(\s*\)=>/\1:/c<CR>
+
 
 "
 " Ruby & Rails specific
