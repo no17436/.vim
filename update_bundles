@@ -34,6 +34,8 @@ git_bundles = [
   # "https://github.com/morhetz/gruvbox.git",
   # "https://github.com/tomasr/molokai.git",
   "git://github.com/tsaleh/vim-matchit.git",
+  'git@github.com:kana/vim-textobj-user.git',
+  'git@github.com:nelstrom/vim-textobj-rubyblock.git',
   # "git://github.com/tpope/vim-commentary.git",
   "https://github.com/tomtom/tcomment_vim.git", # commenting with ctrl+shift+-
   "git://github.com/vim-ruby/vim-ruby.git",
