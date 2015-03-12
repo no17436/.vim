@@ -244,9 +244,10 @@ au BufNewFile,BufReadPost *.coffee setl foldmethod=indent nofoldenable
 
 "custom file extensions
 au BufNewFile,BufRead *.thor set filetype=ruby
+au BufNewFile,BufRead *.rabl set filetype=ruby
 
-" ignore files (for ctrlp)
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip
+" ignore files (for ctrlp and ack)
+set wildignore+=*/tmp/*,*/log/*,*.so,*.swp,*.zip,*/coverage/*
 
 
 "
