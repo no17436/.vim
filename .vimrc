@@ -46,7 +46,7 @@ set formatoptions=qrn1
 
 " mark 100th and 120th characters
 highlight ColorColumn ctermbg=235 guibg=#2c2d27
-let &colorcolumn="100,".join(range(120,999),",")
+let &colorcolumn="100,120"
 
 " Removes trailing spaces on save
 au BufRead,BufWrite * if ! &bin | silent! %s/\s\+$//ge | endif
