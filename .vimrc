@@ -25,6 +25,10 @@ set mouse=a "use mouse even in cli
 set ttyfast "fast terminal (improves responsiveness)
 set laststatus=2 "always show full status (with powerline, etc.)
 
+" disable anoying baloons from vim-ruby and NerdTree
+set balloondelay=100000
+set noballooneval
+
 "
 " indenting
 "
